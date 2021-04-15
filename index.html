@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAA0llUAIF2WAFTl/wDry7IAjrLPAM+aeQAYPG0AkrbLAMOKaQBKw9kAIII0ADSWzwCGrsMAnsPTAARdBACuZU0A//////////+IiFNVVVVVWKiFVVM1M1WqoABVVVVWG6rAAKyIiGGwDMzMfczmG8xEzHx86mG8xEwiIi6qG64iIpIiLq4b6iIimSIq7qHqIi+Zki6uKqIi/5mZIiIiIi//+ZnyIiIi////n/8iIi////////Ii/////////y////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <title>Home Sweet Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Roboto&display=swap" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        /* 
+ YouTube Audio Embed 
+ --------------------
+ 
+ Author: Amit Agarwal
+ Web: http://www.labnol.org/?p=26740 
+*/
+        function onYouTubeIframeAPIReady(id) {
+            var e = document.getElementById(id),
+                t = document.createElement("img");
+            t.setAttribute("id", id + "-icon"), t.style.cssText = "cursor:pointer;cursor:hand", e.appendChild(t);
+            var a = document.createElement("div");
+            a.setAttribute("id", id + "-player"), e.appendChild(a);
+            var o = function (e) {
+                var a = e ? "IDzX9gL.png" : "quyUPXN.png";
+                t.setAttribute("src", "https://i.imgur.com/" + a)
+            };
+            e.onclick = function () {
+                r.getPlayerState() === YT.PlayerState.PLAYING || r.getPlayerState() === YT.PlayerState.BUFFERING ? (r.pauseVideo(), o(!1)) : (r.playVideo(), o(!0))
+            };
+            var r = new YT.Player(id + "-player", {
+                height: "0",
+                width: "0",
+                videoId: e.dataset.video,
+                playerVars: {
+                    autoplay: e.dataset.autoplay,
+                    loop: e.dataset.loop
+                },
+                events: {
+                    onReady: function (e) {
+                        r.setPlaybackQuality("small"), o(r.getPlayerState() !== YT.PlayerState.CUED)
+                    },
+                    onStateChange: function (e) {
+                        e.data === YT.PlayerState.ENDED && o(!1)
+                    }
+                }
+            })
+        }
+
+        function loadAll() {
+            onYouTubeIframeAPIReady("youtube-audio")
+            onYouTubeIframeAPIReady("youtube-audio1")
+            onYouTubeIframeAPIReady("youtube-audio2")
+        }
+    </script>
+</head>
+
+<body onload="loadAll()">
+    <div class="head">
+        <img src="./images/pyramids.png" class="image">
+        <div class="top-left">
+            <h1 class="title">Home Sweet Home</h1>
+            <h2 class="sub-title">Karim Eldegwy</h2>
+        </div>
+
+
+    </div>
+
+    <div class="big-box">
+        <div class="container-fluid">
+            <div class="row example-centered">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                    <ul class="timeline timeline-centered">
+                        <li class="timeline-item period">
+                            <div class="timeline-info"></div>
+                            <div class="timeline-content">
+                                <h2 class="timeline-title timeline-font">April 12, 2016</h2>
+                                <div style="margin: auto; margin-top: 30px; width: 50%;">
+                                    <p>
+                                        For days now, I have been rambling all alone through the malevolent deserts of
+                                        Egypt. I
+                                        know what you are thinking. Is he stupid? How dumb can he be to be alone in a
+                                        desert? I
+                                        promise you I don’t know how this happened. I was a part of a small expedition
+                                        group
+                                        that scoured the Saqaraa dessert looking for the "Vally of Kings". Ever since I
+                                        was a
+                                        kid, I always wanted to visit Egypt. I fell in love with Egyptian history while
+                                        watching
+                                        the mummy cartoon on Nickelodeon. If you think greek mythology is fascinating
+                                        just wait
+                                        until you hear about the mythical Egyptian Pharoah gods. And what is better to
+                                        do than
+                                        experience it firsthand?
+                                    </p>
+                                    <p>
+                                        We were doing our thing, walking in a horizontal pattern, trying our best not to
+                                        leave a
+                                        spot unexplored. And Suddenly, out of the blue, a sandstorm the size of the
+                                        empire state
+                                        building rushes towards our group. Our guide suddenly starts screaming in Arabic
+                                        some
+                                        words I don’t understand. My first instinct was to run away and hide behind a
+                                        stone. Oh,
+                                        boy was I wrong!
+                                    </p>
+                                    <div class="audio-player" data-video="sqzZe6DholE" data-autoplay="0" data-loop="1"
+                                        id="youtube-audio">
+                                    </div>
+                                    <p>
+                                        I hold my breath look around me for the nearest stone and start running as fast
+                                        as I
+                                        can. Dumb me thought that a mere stone can shield this mammoth of a storm.
+                                        Minutes pass
+                                        by and I slowly start to think I made it but suddenly, everything turns pitch
+                                        black.
+                                    </p>
+
+                                    <p>
+                                        After what seemed to be a couple of hours, I wake up with the sun bleaching my
+                                        body and
+                                        the sand literally gnawing on my substance. I stand up and look around me hoping
+                                        that I
+                                        find my team.
+                                    </p>
+                                    <p>
+                                        I see no one. Literally no one.
+                                    </p>
+                                    <p>
+                                        I don’t know what to do. My body and mind are not ready for this. I start to
+                                        panic walk
+                                        around in circles. Who knows maybe God loves me today and I might come across a
+                                        Bedouin
+                                        tribe?
+                                    </p>
+                                    <p>
+                                        After walking a couple of hours, I stumble up a strange underground colossal
+                                        structure.
+                                        I knew it! I found a burial chamber! For a second, I forget about being stuck in
+                                        a
+                                        desert and just stand there admiring the spectacular view. I tiptoe inside
+                                        making sure I
+                                        don’t accidentally push or hit anything. Pharoah burial sites are well known for
+                                        having
+                                        intricate death traps designed to deter intruders.
+                                    </p>
+                                    <img class="spec-img" src="./images/malta-hypogeum.jpg">
+                                    <p>
+                                        “BOOM” a door opens, I look to my left to witness the most beautiful king tomb I
+                                        have
+                                        ever seen.
+
+                                    </p>
+                                </div>
+
+                                <div class="sketchfab-embed-wrapper">
+                                    <iframe class="sreed" title="Sarcophagus" frameborder="0" allowfullscreen
+                                        mozallowfullscreen="true" webkitallowfullscreen="true"
+                                        allow="fullscreen; autoplay; vr" xr-spatial-tracking
+                                        execution-while-out-of-viewport execution-while-not-rendered web-share
+                                        src="https://sketchfab.com/models/294ffe3b55484018bfb5572470d44e3b/embed">
+                                    </iframe>
+                                </div>
+
+                            </div>
+                            <hr>
+                        </li>
+
+                        <li class="timeline-item">
+                            <div class="timeline-info">
+                                <span>April 13, 2016</span>
+                            </div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Breaking news</h3>
+                                <img src="./images/breaking-news.png" class="time-img" style="margin-top: 20px;">
+                                <p>CNN: A university student got lost in the desert and stumbeled upon the missing tomb
+                                    of Raa king of the kigs. The desert rangers have saved the student and are now
+                                    exploring the burial temple
+                                </p>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-info">
+                                <span>April 14, 2016</span>
+                            </div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Twitter going crazy</h3>
+                                <img src="./images/twitter.png">
+                                <p>Karim, the student who got lost at the Egyption desert becomes an internet sensation.
+                                    His
+                                    twitter post reaches 120.2M retweets and 211.2k likes</p>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="timeline-item period">
+                            <div class="timeline-info"></div>
+                            <div class="timeline-content">
+                                <h2 class="timeline-title timeline-font">April 20, 2016</h2>
+                                <div style="margin: auto; margin-top: 30px; width: 50%;">
+                                    <p>
+                                        Omar the chief Egyptologist in the ministry of archeology summons his team of
+                                        brilliant experts and orders them to relocate Raa’s tomb to the grand national
+                                        museum in Alexandria.
+                                    </p>
+                                    <img class="spec-img" src="./images/featured-image.jpg">
+                                    <p>
+                                        Everyone was thrilled and onboard with the decision however, Sherif the lead
+                                        Egyptologist was concerned. If you have ever met Sherif, you will right away
+                                        know why he would do that. Sherif is the kind of guy who would avoid a black cat
+                                        while going back home, never saunter under any stairs, and would never come any
+                                        close to the number 13. He is probably the most superstitious man in Egypt.
+                                        He was nervous because of the monstrous stele that was found next to Raa’s
+                                        magnificent tomb. The stele was full of dust, spider webs, mold, and blood
+                                        markings. If you are not familiar with Egyptian mythology, blood markings are
+                                        placed on cursed tombs. It is said that whoever touches these markings is
+                                        doomed. Nonetheless, Sherif spent hours carefully doing his magic and was able
+                                        to restore the stele to its glory days. Unfortunately, it wasn’t at all good
+                                        news.
+                                    </p>
+                                    <div class="sketchfab-embed-wrapper">
+                                        <iframe class="sreed2" title="Stele Dame" frameborder="0" allowfullscreen
+                                            mozallowfullscreen="true" webkitallowfullscreen="true"
+                                            allow="fullscreen; autoplay; vr" xr-spatial-tracking
+                                            execution-while-out-of-viewport execution-while-not-rendered web-share
+                                            src="https://sketchfab.com/models/687e9a9c689141ffbb132af219a9a2ea/embed">
+                                        </iframe>
+                                    </div>
+                                    <p>
+                                        “I Raa King of the Kings. Warrior of the Nile. Leader of the underworld. Hereby
+                                        declare that I will bestow my relentless wrath on anyone who disturbs my sleep.
+                                        Children of the Nile, If the lustrous sun stops shinning and I am not at my
+                                        glorious home, I will destroy you and your dreams” read the ancient stele.
+                                        The Chief did not listen to Sherif’s concern and aggressively demanded a hasty
+                                        transport and restoration. Reluctantly, Sherif complied and worked tirelessly
+                                        for weeks to fulfil his demands. Little did he or any of his team know what is
+                                        going to happen.
+                                    </p>
+                                    <p>
+                                        Egypt was beaming with happiness when news of the move was made public. Raa was
+                                        the only missing king from the 3rd dynasty that saved Egypt from the Meroë’s
+                                        invasion. So, you can probably tell he was one of their favorite war general
+                                        pharaohs.
+                                    </p>
+                                    <img class="spec-img" src="./images/Golden-Parade-1600-px.jpg">
+                                    <p>
+                                        When the ministry noticed how the Egyptians were ecstatic, they decided to
+                                        create a nationwide massive event where Raa’s body would visit every city. They
+                                        called the event "The Golden Parade".
+                                    </p>
+                                    <p>
+                                        Thousands of Egyptians took it to the street alongside hundreds of the countries
+                                        musicians and everyone was going crazy over Raa’s mummified body.
+                                        While everyone was celebrating, Sherif was stuck at his dark and gloomy Cairo
+                                        apartment trying to decode what “If the lustrous sun stops shinning” meant.
+                                        “Sun stops shinning. Hmmm ... Does Raa mean at night? But we moved his body
+                                        weeks ago and we are all fine. Hmmm … Is this stele a lie?”
+                                        “Oh God, don’t tell me…"
+                                    </p>
+                                    <div class="audio-player" data-video="aJ3i3WfiUv4" data-autoplay="0" data-loop="1"
+                                        id="youtube-audio1">
+                                    </div>
+                                    <p>
+                                        "It’s talking about a solar eclipse."
+                                        Sherif quickly googles when the next solar eclipse is, surprisingly, it turns
+                                        out to be in 12 days. He hastily opens his work laptop and types out all his
+                                        alarming conclusions and sends it to everyone he knows.
+                                        No one believed Sherif, but Sherif did not care. He started packing his stuff
+                                        and was looking for the cheapest flight to anywhere.
+                                    </p>
+                                </div>
+
+
+                            </div>
+                            <hr>
+                        </li>
+
+                        <li class="timeline-item">
+                            <div class="timeline-info">
+                                <span>April 20, 2016</span>
+                            </div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Raa's tomb arrives safely to the Grand National
+                                    Museum of Egypt</h3>
+                                <img src="./images/67529457_2438283489550620_1990768361612509184_o.jpg"
+                                    style="margin-top: 20px;" class="time-img">
+                                <p>ALEXANDRIA NEWS: Specialists at the museum have successfully restored Raa’s tomb and
+                                    have uncovered a layer of gold bellow the limestone.</p>
+                            </div>
+                        </li>
+                        <li class="timeline-item period">
+                            <div class="timeline-info"></div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h2 class="timeline-title">12 days have passed</h2>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-info">
+                                <span>May 2, 2016</span>
+                            </div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Egypt experiences its first solar eclipse in years</h3>
+                                <img src="./images/960x0.jpg" class="time-img">
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-info">
+                                <span>May 6, 2016</span>
+                            </div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Is the Nile river loosing its water?</h3>
+                                <img src="./images/giphy.gif" class="time-img">
+                                <p>REUTERS: Researchers at the University of Cairo have noticed a sharp increase in the
+                                    Nile's
+                                    water content. They believe that on average around 10m cubic centileters are lost on
+                                    daily basis. At this rate, the Nile will loose all its water in 5 months</p>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-info">
+                                <span>May 12, 2016</span>
+                            </div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Suez Canal Blocked</h3>
+                                <img src="./images/2060.jpg" class="time-img">
+                                <img src="./images/doc7f2a66krd041iz1hn74b.jpg" class="time-img">
+                                <p>THE GUARDIAN: A massive container the size of the empire state building is blocking
+                                    the Suez canal. Officials predict that Egypt is going to loose millions of dollars
+                                    if they are unable to refloat it soon</p>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-info">
+                                <span>May 20, 2016</span>
+                            </div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Weird disease is spreading in Egypt</h3>
+                                <img src="./images/1125693_0.jpg" class="time-img">
+                                <p>EGYPT NEWS: A weird disease called COEGY-16 is spreading among the population. Egypt
+                                    is slumbering into chaos as officials are trying to control the situation</p>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="timeline-item period">
+                            <div class="timeline-info"></div>
+                            <div class="timeline-content">
+                                <h2 class="timeline-title timeline-font">May 23, 2016</h2>
+                                <div style="margin: auto; margin-top: 30px; width: 50%;">
+                                    <img src="./images/maxresdefault.jpg" class="spec-img">
+                                    <p>
+                                        Egypt is slumbered with unexplained chaos. Can it be the curse of Raa? Or is it
+                                        just pure unexpected coincidence? The president is running out of ideas.
+                                        Someone in the ministry got hold of Sherif’s report and conveyed his findings to
+                                        the president’s office. In just a couple of days, the ministry contacted Sherif
+                                        and begged him to come back to Egypt. They needed his expertise to help end this
+                                        merciless chaos.
+                                    </p>
+                                    <p>
+                                        Despite no one listening to his constant earlier pleads and everyone labelling
+                                        him as a delusional buffoon. Sherif agreed and started packing his things.
+                                        It was expected. He has the genes of the pharaohs. He can’t just leave his
+                                        beloved country behind.
+                                    </p>
+                                    <p>
+                                        He took the next available plane home and was greeted by the chief Egyptologist
+                                        at the airport. Sherif didn’t waste a single minute and started asking
+                                        questions. He wanted to catch up with all the events that happened. Really what
+                                        Sherif wanted to know was how in million years he a mere Egyptologist can
+                                        possibly end this chaos.
+                                    </p>
+                                    <p>
+                                        Sherif asked the chief: “Why did you specifically call me?”
+                                        Chief: “Everything in your report made sense, everything you mention happened
+                                        and at this point the president authorized me to fully support your decisions.
+                                        Sherif my son, I know we put you down but please please I beg you to not take
+                                        out your anger on Egypt.”
+
+                                        Sherif assured the chief that he would never do that and started brainstorming
+                                        solutions right away.
+
+                                        Sherif: “Did you by any chance, move Raa’s body back to the burial chambers in
+                                        Saqqara?”
+                                        Chief: “Yes we did but sadly nothing changed”
+                                        Sherif: “Oh God ... Bu Bu But… Th Thi This should’ve done it.”
+                                        Chief: “Take a couple of days to think about this, please please do your magic”
+                                        Sherif: “Alright”
+                                    </p>
+                                    <img src="./images/my_room_on_a_dark_cold_night_by_mudley_d30763u-fullview.jpg"
+                                        class="spec-img">
+                                    <div class="audio-player" style="margin-top: 30px;" data-video="lQPdYRh3CME"
+                                        data-autoplay="0" data-loop="1" id="youtube-audio2">
+                                    </div>
+                                    <p>
+                                        On a dark, cold, and gloomy night, while staring at the chaos that is happening
+                                        on the streets. Sherif asked himself: “What does glorious home mean? Is it just
+                                        the place where you sleep?” But then he remembered that It didn’t feel like home
+                                        when he ran away and travelled leaving his family and his loved ones behind
+                                        It popped in his head: “Was Raa buried alone?” He made some phone calls, and it
+                                        turns he was right. Raa was asleep next to his beloved wife Hatshepsut.
+                                        Hatshepsut, Queen of the Nile and Raa’s one and only wife was buried 3 meters
+                                        away in a hidden room. Her body was moved to a different museum due to some
+                                        bureaucratic bulls***.
+                                    </p>
+                                    <p>
+
+                                        Sherif sat for a couple of hours trying to make sense of all this new
+                                        information and after what seemed like a decade. He jumps out of his chair and
+                                        calls the chief.
+                                    </p>
+                                    <img src="./images/d41586-020-00465-y_17727208.jpg" class="spec-img">
+                                    <p>
+                                        Sherif: "You Idiots, his home is not the temple. His home is queen Hatshepsut.
+                                        There is no home without your loved ones. Raa loved his wife so much that he
+                                        wanted to spend his entire life with her. Even after his death.
+                                        Their curse is. Nah I mean their love is so strong that it is not just causing
+                                        the chaos but is going to soon destroy Egypt.
+                                        For once trust me you degene**** Listen to me. Move the queen to the arms of her
+                                        beloved. Once they feel each other’s presence, the Chaos will stop, and Egypt
+                                        will live to see another day."
+                                    </p>
+                                </div>
+
+                            </div>
+                            <hr>
+
+                        </li>
+                    </ul>
+                    <div style="margin: auto;">
+                        <p style="text-align: center;">References</p>
+                        <ul>
+                            <li>https://codepen.io/brady_wright/pen/NNOvrW</li>
+                            <li>https://breakyourownnews.com/</li>
+                            <li>https://giphy.com/gifs/breaking-news-gJfb1jxItHqN2</li>
+                            <li>https://media.nature.com/lw800/magazine-assets/d41586-020-00465-y/d41586-020-00465-y_17727208.jpg
+                            </li>
+                            <li>https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cc5a9c22-b4b0-42f6-bbda-7e6d2f1b8ed3/d30763u-6bb6a504-571a-4c9d-adc9-7480f88015f3.jpg/v1/fill/w_900,h_675,q_75,strp/my_room_on_a_dark_cold_night_by_mudley_d30763u-fullview.jpg?
+                            </li>
+                            <li>https://i.ytimg.com/vi/sd5IzKXPDg8/maxresdefault.jpg</li>
+                            <li>https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.locandalagelsomina.com%2Fblog%2Fthe-mystical-site-of-al-saflieni-the-hypogeum&psig=AOvVaw3fjxR7I-rH8fueUXo73BO3&ust=1618538983795000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPjq992V_-8CFQAAAAAdAAAAABAV
+                            </li>
+                            <li>https://www.pexels.com/photo/adult-beard-boy-casual-220453/</li>
+                            <li>https://static.scientificamerican.com/sciam/cache/file/022EFBBE-D9B5-4656-97A884FEF5E020BC_source.jpg
+                            </li>
+                            <li>https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.forbes.com%2Fsites%2Fjamiecartereurope%2F2020%2F10%2F03%2Fwhen-is-the-next-solar-and-lunar-eclipse-theyre-sooner-than-you-think%2F&psig=AOvVaw2L4bFdv8v1SdaninyvraOd&ust=1618544419858000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLCPsP2p_-8CFQAAAAAdAAAAABAD
+                            </li>
+                            <li>https://www.google.com/url?sa=i&url=https%3A%2F%2Fwater.fanack.com%2Fspecials%2Fnile-river-in-egypt%2F&psig=AOvVaw0-PXEH6IIvQCqdQUQro0kU&ust=1618544619657000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLDolt2q_-8CFQAAAAAdAAAAABAD
+                            </li>
+                            <li>https://finanswatch.dk/Billeder/article12858187.ece/ALTERNATES/schema-16_9/doc7f2a66krd041iz1hn74b.jpg
+                            </li>
+                            <li>https://i.guim.co.uk/img/media/ec78f3177711e8965f0f4a844fe7c649b61ac248/0_15_2060_1236/master/2060.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&s=db0d61b07db5e691e11bdbffac1b0830
+                            </li>
+                            <li>https://www.egypttoday.com/siteimages/Larg/33686.jpg</li>
+                            <li>https://amayei.nyc3.digitaloceanspaces.com/2020/04/1125693_0.jpg</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
