@@ -2,7 +2,9 @@
 <html>
 
 <head>
-    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAA0llUAIF2WAFTl/wDry7IAjrLPAM+aeQAYPG0AkrbLAMOKaQBKw9kAIII0ADSWzwCGrsMAnsPTAARdBACuZU0A//////////+IiFNVVVVVWKiFVVM1M1WqoABVVVVWG6rAAKyIiGGwDMzMfczmG8xEzHx86mG8xEwiIi6qG64iIpIiLq4b6iIimSIq7qHqIi+Zki6uKqIi/5mZIiIiIi//+ZnyIiIi////n/8iIi////////Ii/////////y////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAA0llUAIF2WAFTl/wDry7IAjrLPAM+aeQAYPG0AkrbLAMOKaQBKw9kAIII0ADSWzwCGrsMAnsPTAARdBACuZU0A//////////+IiFNVVVVVWKiFVVM1M1WqoABVVVVWG6rAAKyIiGGwDMzMfczmG8xEzHx86mG8xEwiIi6qG64iIpIiLq4b6iIimSIq7qHqIi+Zki6uKqIi/5mZIiIiIi//+ZnyIiIi////n/8iIi////////Ii/////////y////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        rel="icon" type="image/x-icon" />
     <meta charset="UTF-8">
     <title>Home Sweet Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +13,7 @@
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
 
     <link rel="stylesheet" href="css/style.css">
-
+    
     <script src="https://www.youtube.com/iframe_api"></script>
     <script>
         /* 
@@ -61,7 +63,7 @@
     </script>
 </head>
 
-<body onload="loadAll()">
+<body id="body" onload="loadAll()">
     <div class="head">
         <img src="./images/pyramids.png" class="image">
         <div class="top-left">
@@ -477,3 +479,16 @@
 </body>
 
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
+        $(window).on('load', function () {
+            setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+        });
+        function removeLoader() {
+            $("#loadingDiv").fadeOut(500, function () {
+                // fadeOut complete. Remove the loading div
+                $("#loadingDiv").remove(); //makes page more lightweight 
+            });
+        }
+    </script>
